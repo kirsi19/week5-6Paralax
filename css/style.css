@@ -1,0 +1,190 @@
+:root {
+    --dark-color: #5a4141;
+    --dark-transparent: #5a4141c9;
+    --medium-color: #8d6c5e;
+    --medium-transparent: #8d6c5e6c;
+    --medium-light: #f8b395;
+    --medium-dark: #85543f;
+    --light-color: #cabda8;
+    --light-transparent: #cabda86e;
+}
+
+@font-face {
+    font-family: myTiro;
+    src: url('../fonts/TiroTelugu-Italic.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-color);
+    text-align: center;
+    font-family: myTiro;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url("../images/pic1.jpeg");
+    background-position: top;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.intro-image__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.intro-image__link a {
+    border: 2px solid var(--light-color);
+    background-color: var(--medium-transparent);
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem;
+    color: var(--light-color);
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.intro-image__link a:hover, .quality-image__link a:hover, .origin-image__link a:hover {
+    transform: scale(1.2);
+}
+
+.intro-text {
+    display: flex;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 250px;
+    padding: 0 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.quality-image {
+    background-attachment: fixed;
+    background-image: url("../images/pic2.jpeg");
+    height: 600px;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality-image__link a {
+    border: 2px solid var(--dark-color);
+    background-color: var(--light-transparent);
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem;
+    color: var(--dark-color);
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.quality-text {
+    display: flex;
+    background-color: var(--medium-light);
+    color: var(--dark-color);
+    height: 250px;
+    padding: 0 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-text h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.origin-image {
+    background-attachment: fixed;
+    background-image: url("../images/pic3.jpeg");
+    height: 600px;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.origin-image__link a {
+    border: 2px solid var(--medium-light);
+    background-color: var(--dark-transparent);
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem;
+    color: var(--medium-light);
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.origin-text {
+    display: flex;
+    background-color: var(--medium-dark);
+    color: var(--medium-light);
+    height: 250px;
+    padding: 0 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.origin-text h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    height: 250px;
+    background-color: var(--medium-light);
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+.contact {
+    padding-top: 2rem;
+}
+
+.contact ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.contact ul li a:hover {
+    color: var(--medium-color);
+}
+
+.footer p {
+   margin-top: 2rem;
+}
+
